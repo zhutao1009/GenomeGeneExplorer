@@ -9,6 +9,17 @@
 
 ---
 
+## 0. 下载
+
+| 方式 | 说明 |
+| --- | --- |
+| **免安装压缩包（推荐）** | [**v1.1.4 · Windows 64 位**](https://github.com/zhutao1009/GenomeGeneExplorer/releases/latest) —— 约 53 MB，解压到任意目录，双击 `GenomeGeneExplorer.exe` 即用，**不需要 Python、不需要联网** |
+| 从源码运行 | `git clone` 后双击 `start.bat`（见 §2.2），或 `pip install -r requirements.txt && python run_app.py` |
+
+压缩包内附 `使用说明.txt`。解压后请保持 `GenomeGeneExplorer.exe` 与 `_internal` 文件夹同层级，只拷 exe 无法运行；未签名 exe 被杀毒软件拦截属常见误报，选择"允许"即可。用户配置与数据集存放于 `%APPDATA%\GenomeGeneExplorer\`，删除该目录即彻底清除。
+
+---
+
 ## 1. 系统要求
 
 | 项目 | 要求 |
@@ -25,7 +36,9 @@
 
 ### 2.1 方式一：直接用已打包的 exe（电脑上没有 Python 也能跑）
 
-交付包内的 `dist\GenomeGeneExplorer\` 是已经打包好的完整程序：
+最省事的是从 [Releases](https://github.com/zhutao1009/GenomeGeneExplorer/releases/latest) 下载 `GenomeGeneExplorer-v1.1.4-win64.zip`，解压后直接双击其中的 `GenomeGeneExplorer.exe`。
+
+如果手上有源码，交付包内的 `dist\GenomeGeneExplorer\` 是同样的完整程序：
 
 ```
 双击 dist\GenomeGeneExplorer\GenomeGeneExplorer.exe
