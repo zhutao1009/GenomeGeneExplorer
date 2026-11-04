@@ -1,0 +1,4 @@
+# 开发/打包依赖
+-r requirements.txt
+pytest>=7.4
+pyinstaller>=6.3

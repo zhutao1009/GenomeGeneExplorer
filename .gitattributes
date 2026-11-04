@@ -1,0 +1,20 @@
+# 批处理必须是 CRLF：cmd.exe 解析 LF-only 的 .bat 时会把 if (...) 块
+# 的边界算错，表现为 'cho' 不是内部或外部命令、binding handle 无效等怪错。
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf
+
+# 源码与文档统一 LF 即可
+*.py    text eol=lf
+*.md    text eol=lf
+*.spec  text eol=lf
+*.txt   text eol=lf
+*.ini   text eol=lf
+
+# 测试数据与界面截图按二进制处理，避免 Git 试图合并/转换
+*.fa     -text
+*.fasta  -text
+*.fai    -text
+*.gff3   -text
+*.gtf    -text
+*.png    binary

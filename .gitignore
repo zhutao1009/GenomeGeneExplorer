@@ -1,0 +1,31 @@
+# ---------------- Python ----------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.cache/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---------------- 打包构建产物 ----------------
+# dist 是整个 exe 分发目录（含 _internal 数百个文件、旧版备份），
+# 体积数百 MB，不入库；发布时走 GitHub Releases。
+build/
+dist/
+*.dist-info/
+*.manifest
+
+# ---------------- 编辑器 / 系统 ----------------
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------- 运行时产物 ----------------
+*.log
+selftest_settings.json
